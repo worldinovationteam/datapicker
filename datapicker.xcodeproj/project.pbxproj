@@ -8,22 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2442CCBD196697E400890F0C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442CCBC196697E400890F0C /* SettingViewController.m */; };
-		2442CCBF196D325A00890F0C /* unlockedslider.png in Resources */ = {isa = PBXBuildFile; fileRef = 2442CCBE196D325A00890F0C /* unlockedslider.png */; };
-		2442CCC3196D5FB600890F0C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2442CCC2196D5FB600890F0C /* arrow.png */; };
-		24E000B6196F07940008E3B6 /* mojiban.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000B5196F07940008E3B6 /* mojiban.png */; };
-		24E000BA196F1A460008E3B6 /* tanshin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000B9196F1A460008E3B6 /* tanshin2.png */; };
-		24E000BC196F1A5D0008E3B6 /* choushin.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000BB196F1A5D0008E3B6 /* choushin.png */; };
-		24E000BE196FB8C50008E3B6 /* mojiban2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000BD196FB8C50008E3B6 /* mojiban2.png */; };
-		24E000C1196FE5470008E3B6 /* byoushin.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000C0196FE5470008E3B6 /* byoushin.png */; };
-		24E000C31970209A0008E3B6 /* ningen.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000C21970209A0008E3B6 /* ningen.png */; };
-		24E000C51970301E0008E3B6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000C41970301E0008E3B6 /* background.png */; };
-		24E000C7197047F00008E3B6 /* ningen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000C6197047F00008E3B6 /* ningen1.png */; };
-		24E000C91971568A0008E3B6 /* jikken.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24E000C81971568A0008E3B6 /* jikken.gif */; };
-		24E000CB19716D380008E3B6 /* mojihaikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000CA19716D380008E3B6 /* mojihaikei.png */; };
-		24E000CD19718F340008E3B6 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000CC19718F340008E3B6 /* fire.png */; };
-		24E000CF197190FC0008E3B6 /* fire2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000CE197190FC0008E3B6 /* fire2.png */; };
 		24E000DB1972FE290008E3B6 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E000DA1972FE290008E3B6 /* NavigationViewController.m */; };
 		24E000DE197307380008E3B6 /* NickNameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E000DD197307380008E3B6 /* NickNameTableViewController.m */; };
+		24E000E0197684660008E3B6 /* etranze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E000DF197684660008E3B6 /* etranze.mp3 */; };
+		24E000E91976849B0008E3B6 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E11976849B0008E3B6 /* arrow.png */; };
+		24E000EA1976849B0008E3B6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E21976849B0008E3B6 /* background.png */; };
+		24E000EB1976849B0008E3B6 /* byoushin.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E31976849B0008E3B6 /* byoushin.png */; };
+		24E000EC1976849B0008E3B6 /* choushin.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E41976849B0008E3B6 /* choushin.png */; };
+		24E000ED1976849B0008E3B6 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E51976849B0008E3B6 /* fire.png */; };
+		24E000EE1976849B0008E3B6 /* mojiban2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E61976849B0008E3B6 /* mojiban2.png */; };
+		24E000EF1976849B0008E3B6 /* tanshin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E71976849B0008E3B6 /* tanshin2.png */; };
+		24E000F01976849B0008E3B6 /* unlockedslider.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E81976849B0008E3B6 /* unlockedslider.png */; };
 		24E37BC5195BC11B00DABF5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BC4195BC11B00DABF5D /* Foundation.framework */; };
 		24E37BC7195BC11B00DABF5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BC6195BC11B00DABF5D /* CoreGraphics.framework */; };
 		24E37BC9195BC11B00DABF5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BC8195BC11B00DABF5D /* UIKit.framework */; };
@@ -40,7 +35,6 @@
 		24E37BF0195BC11B00DABF5D /* datapickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37BEF195BC11B00DABF5D /* datapickerTests.m */; };
 		24E37BFB195BE3DA00DABF5D /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37BFA195BE3DA00DABF5D /* ClockViewController.m */; };
 		24E37BFD195E511D00DABF5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BFC195E511D00DABF5D /* AVFoundation.framework */; };
-		24E37BFF195E54D400DABF5D /* etranze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E37BFE195E54D400DABF5D /* etranze.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,24 +50,19 @@
 /* Begin PBXFileReference section */
 		2442CCBB196697E400890F0C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		2442CCBC196697E400890F0C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		2442CCBE196D325A00890F0C /* unlockedslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unlockedslider.png; path = ../../unlockedslider.png; sourceTree = "<group>"; };
-		2442CCC2196D5FB600890F0C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../arrow.png; sourceTree = "<group>"; };
-		24E000B5196F07940008E3B6 /* mojiban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mojiban.png; path = ../../mojiban.png; sourceTree = "<group>"; };
-		24E000B9196F1A460008E3B6 /* tanshin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tanshin2.png; path = ../../tanshin2.png; sourceTree = "<group>"; };
-		24E000BB196F1A5D0008E3B6 /* choushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = choushin.png; path = ../../choushin.png; sourceTree = "<group>"; };
-		24E000BD196FB8C50008E3B6 /* mojiban2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mojiban2.png; path = ../../mojiban2.png; sourceTree = "<group>"; };
-		24E000C0196FE5470008E3B6 /* byoushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = byoushin.png; path = ../../byoushin.png; sourceTree = "<group>"; };
-		24E000C21970209A0008E3B6 /* ningen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ningen.png; path = ../../ningen.png; sourceTree = "<group>"; };
-		24E000C41970301E0008E3B6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../background.png; sourceTree = "<group>"; };
-		24E000C6197047F00008E3B6 /* ningen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ningen1.png; path = ../../ningen1.png; sourceTree = "<group>"; };
-		24E000C81971568A0008E3B6 /* jikken.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = jikken.gif; path = ../../jikken.gif; sourceTree = "<group>"; };
-		24E000CA19716D380008E3B6 /* mojihaikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mojihaikei.png; path = ../../mojihaikei.png; sourceTree = "<group>"; };
-		24E000CC19718F340008E3B6 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = ../../fire.png; sourceTree = "<group>"; };
-		24E000CE197190FC0008E3B6 /* fire2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire2.png; path = ../../fire2.png; sourceTree = "<group>"; };
 		24E000D91972FE290008E3B6 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		24E000DA1972FE290008E3B6 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		24E000DC197307380008E3B6 /* NickNameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickNameTableViewController.h; sourceTree = "<group>"; };
 		24E000DD197307380008E3B6 /* NickNameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickNameTableViewController.m; sourceTree = "<group>"; };
+		24E000DF197684660008E3B6 /* etranze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = etranze.mp3; sourceTree = "<group>"; };
+		24E000E11976849B0008E3B6 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		24E000E21976849B0008E3B6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		24E000E31976849B0008E3B6 /* byoushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = byoushin.png; sourceTree = "<group>"; };
+		24E000E41976849B0008E3B6 /* choushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choushin.png; sourceTree = "<group>"; };
+		24E000E51976849B0008E3B6 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		24E000E61976849B0008E3B6 /* mojiban2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mojiban2.png; sourceTree = "<group>"; };
+		24E000E71976849B0008E3B6 /* tanshin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanshin2.png; sourceTree = "<group>"; };
+		24E000E81976849B0008E3B6 /* unlockedslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockedslider.png; sourceTree = "<group>"; };
 		24E37BC1195BC11B00DABF5D /* datapicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datapicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E37BC4195BC11B00DABF5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24E37BC6195BC11B00DABF5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,7 +85,6 @@
 		24E37BF9195BE3DA00DABF5D /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		24E37BFA195BE3DA00DABF5D /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		24E37BFC195E511D00DABF5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		24E37BFE195E54D400DABF5D /* etranze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = etranze.mp3; path = ../../etranze.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,21 +159,15 @@
 				24E37BFA195BE3DA00DABF5D /* ClockViewController.m */,
 				24E37BD9195BC11B00DABF5D /* ViewController.h */,
 				24E37BDA195BC11B00DABF5D /* ViewController.m */,
-				24E37BFE195E54D400DABF5D /* etranze.mp3 */,
-				24E000C41970301E0008E3B6 /* background.png */,
-				2442CCBE196D325A00890F0C /* unlockedslider.png */,
-				2442CCC2196D5FB600890F0C /* arrow.png */,
-				24E000B5196F07940008E3B6 /* mojiban.png */,
-				24E000BD196FB8C50008E3B6 /* mojiban2.png */,
-				24E000BB196F1A5D0008E3B6 /* choushin.png */,
-				24E000B9196F1A460008E3B6 /* tanshin2.png */,
-				24E000C0196FE5470008E3B6 /* byoushin.png */,
-				24E000C21970209A0008E3B6 /* ningen.png */,
-				24E000C6197047F00008E3B6 /* ningen1.png */,
-				24E000C81971568A0008E3B6 /* jikken.gif */,
-				24E000CA19716D380008E3B6 /* mojihaikei.png */,
-				24E000CC19718F340008E3B6 /* fire.png */,
-				24E000CE197190FC0008E3B6 /* fire2.png */,
+				24E000DF197684660008E3B6 /* etranze.mp3 */,
+				24E000E11976849B0008E3B6 /* arrow.png */,
+				24E000E21976849B0008E3B6 /* background.png */,
+				24E000E31976849B0008E3B6 /* byoushin.png */,
+				24E000E41976849B0008E3B6 /* choushin.png */,
+				24E000E51976849B0008E3B6 /* fire.png */,
+				24E000E61976849B0008E3B6 /* mojiban2.png */,
+				24E000E71976849B0008E3B6 /* tanshin2.png */,
+				24E000E81976849B0008E3B6 /* unlockedslider.png */,
 				24E37BDC195BC11B00DABF5D /* Images.xcassets */,
 				24E37BCB195BC11B00DABF5D /* Supporting Files */,
 			);
@@ -297,23 +279,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E000C7197047F00008E3B6 /* ningen1.png in Resources */,
-				24E000C91971568A0008E3B6 /* jikken.gif in Resources */,
+				24E000EC1976849B0008E3B6 /* choushin.png in Resources */,
 				24E37BDD195BC11B00DABF5D /* Images.xcassets in Resources */,
-				2442CCC3196D5FB600890F0C /* arrow.png in Resources */,
-				24E000C51970301E0008E3B6 /* background.png in Resources */,
+				24E000ED1976849B0008E3B6 /* fire.png in Resources */,
+				24E000EB1976849B0008E3B6 /* byoushin.png in Resources */,
+				24E000EF1976849B0008E3B6 /* tanshin2.png in Resources */,
+				24E000EA1976849B0008E3B6 /* background.png in Resources */,
 				24E37BCF195BC11B00DABF5D /* InfoPlist.strings in Resources */,
-				24E000BC196F1A5D0008E3B6 /* choushin.png in Resources */,
-				24E000CD19718F340008E3B6 /* fire.png in Resources */,
-				24E000B6196F07940008E3B6 /* mojiban.png in Resources */,
-				24E000BE196FB8C50008E3B6 /* mojiban2.png in Resources */,
-				24E37BFF195E54D400DABF5D /* etranze.mp3 in Resources */,
-				24E000BA196F1A460008E3B6 /* tanshin2.png in Resources */,
-				24E000CF197190FC0008E3B6 /* fire2.png in Resources */,
-				24E000CB19716D380008E3B6 /* mojihaikei.png in Resources */,
-				24E000C31970209A0008E3B6 /* ningen.png in Resources */,
-				2442CCBF196D325A00890F0C /* unlockedslider.png in Resources */,
-				24E000C1196FE5470008E3B6 /* byoushin.png in Resources */,
+				24E000E0197684660008E3B6 /* etranze.mp3 in Resources */,
+				24E000EE1976849B0008E3B6 /* mojiban2.png in Resources */,
+				24E000F01976849B0008E3B6 /* unlockedslider.png in Resources */,
+				24E000E91976849B0008E3B6 /* arrow.png in Resources */,
 				24E37BD8195BC11B00DABF5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
