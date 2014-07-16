@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClockViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSString *_arguments;
+}
+
+@property(nonatomic) NSString *arguments;
 
 @end

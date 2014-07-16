@@ -10,6 +10,9 @@
 
 @implementation AppDelegate
 
+@synthesize window;
+@synthesize tabBarController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
