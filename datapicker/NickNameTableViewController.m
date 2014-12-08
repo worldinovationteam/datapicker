@@ -7,13 +7,17 @@
 //
 
 #import "NickNameTableViewController.h"
-#import "SettingViewController.h"
+
+
 
 @interface NickNameTableViewController ()
+
 
 @end
 
 @implementation NickNameTableViewController
+
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,6 +34,7 @@
 
     self.title = @"ニックネーム";
     dataSource  = [[NSArray alloc] initWithObjects:@"ニックネーム",nil];
+    
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -92,15 +97,15 @@
     
     
     if (indexPath.row == 0) {
-        nickNameTextfld.placeholder = @"default";
+        NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+        if(userdefaults == nil){
+            nickNameTextfld.placeholder = @"default";
+        }
+        nickNameTextfld.placeholder = [userdefaults objectForKey:@"nickName"];
         nickNameTextfld.returnKeyType = UIReturnKeyDone;
         nickNameTextfld.secureTextEntry = NO;
         
         
-        
-        
-        SettingViewController *settingviewcontroller = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingView"];
-        settingviewcontroller.nickNameString_ = nickNameString;
         
         
         
@@ -125,14 +130,23 @@
         
     }
     
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:nickNameString forKey:@"nickName"];
     
-    SettingViewController *settingviewcontroller = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingView"];
-    settingviewcontroller.nickNameString_ = nickNameString;
     
-    NSLog(@"propa%@",settingviewcontroller.nickNameString_);
+    [delegate nicknametableviewcontroller:self didClose:nickNameString];
+
+  
+    
+    
+    
     
     return  YES;
 }
+
+//デリゲートメソッドの実装
+
+
 
 -(void)updateCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath*)indexPath{
     

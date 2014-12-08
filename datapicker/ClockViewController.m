@@ -26,40 +26,104 @@ UILabel *clockLabel;
 {
     [super viewDidLoad];
     
+    NSLog(@"%lf",[[UIScreen mainScreen] bounds].size.height);
+    
     //画像のセット
     //背景設定
-    UIImageView *backGroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    backGroundImage.image = [UIImage imageNamed:@"background.png"];
-    [self.view addSubview:backGroundImage];
+    if([self isiPhone5]){
+        UIImageView *backGroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+        backGroundImage.image = [UIImage imageNamed:@"background.png"];
+        [self.view addSubview:backGroundImage];
+    }else if ([self isiPhone4]) {
+        UIImageView *backGroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+        backGroundImage.image = [UIImage imageNamed:@"background.png"];
+        [self.view addSubview:backGroundImage];
+    }else{
+        UIImageView *backGroundImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+        backGroundImage.image = [UIImage imageNamed:@"background.png"];
+        [self.view addSubview:backGroundImage];
+    }
+
     
     //ロック解除スライダー
-    UIView *unlockedsliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 480-SLIDEHEIGHT, SLIDEWIDTH, SLIDEHEIGHT)];
-    [self.view addSubview:unlockedsliderView];
+    if([self isiPhone5]){
+        UIView *unlockedsliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 568-SLIDEHEIGHT, SLIDEWIDTH, SLIDEHEIGHT)];
+        [self.view addSubview:unlockedsliderView];
+        
+        UIImageView *sliderImage = [[UIImageView alloc] initWithFrame:unlockedsliderView.bounds];
+        sliderImage.image = [UIImage imageNamed:@"unlockedslider.png"];
+        [unlockedsliderView addSubview:sliderImage];
+        
+        //矢印スライダー画像
+        arrowView = [[UIView alloc] initWithFrame:CGRectMake(24, 524, 56, 38)];
+        [self.view addSubview:arrowView];
+        
+        
+        UIImageView *arrowImage = [[UIImageView alloc] initWithFrame:arrowView.bounds];
+        arrowImage.image = [UIImage imageNamed:@"arrow.png"];
+        [arrowView addSubview:arrowImage];
+        
+
+        NSLog(@"slider5");
+    }else if ([self isiPhone4]) {
+            UIView *unlockedsliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 480-SLIDEHEIGHT, SLIDEWIDTH, SLIDEHEIGHT)];
+            [self.view addSubview:unlockedsliderView];
+            
+            UIImageView *sliderImage = [[UIImageView alloc] initWithFrame:unlockedsliderView.bounds];
+            sliderImage.image = [UIImage imageNamed:@"unlockedslider.png"];
+            [unlockedsliderView addSubview:sliderImage];
+        //矢印スライダー画像
+        arrowView = [[UIView alloc] initWithFrame:CGRectMake(24, 436, 56, 38)];
+        [self.view addSubview:arrowView];
+        
+        
+        UIImageView *arrowImage = [[UIImageView alloc] initWithFrame:arrowView.bounds];
+        arrowImage.image = [UIImage imageNamed:@"arrow.png"];
+        [arrowView addSubview:arrowImage];
+        
+
+        
+        
+    }else{
+        UIView *unlockedsliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 480-SLIDEHEIGHT, SLIDEWIDTH, SLIDEHEIGHT)];
+        [self.view addSubview:unlockedsliderView];
+        
+        UIImageView *sliderImage = [[UIImageView alloc] initWithFrame:unlockedsliderView.bounds];
+        sliderImage.image = [UIImage imageNamed:@"unlockedslider.png"];
+        [unlockedsliderView addSubview:sliderImage];
+        //矢印スライダー画像
+        arrowView = [[UIView alloc] initWithFrame:CGRectMake(24, 436, 56, 38)];
+        [self.view addSubview:arrowView];
+        
+        
+        UIImageView *arrowImage = [[UIImageView alloc] initWithFrame:arrowView.bounds];
+        arrowImage.image = [UIImage imageNamed:@"arrow.png"];
+        [arrowView addSubview:arrowImage];
+        
+        
+    }
     
-    UIImageView *sliderImage = [[UIImageView alloc] initWithFrame:unlockedsliderView.bounds];
-    sliderImage.image = [UIImage imageNamed:@"unlockedslider.png"];
-    [unlockedsliderView addSubview:sliderImage];
     
     
     //文字ラベル
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(120, 13, 200, 30)];
-    label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont fontWithName:@"Arial-BoldMT" size:15];
-    label.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"mojihaikei.png"]];
-    label.text = @"STOP ALERM";
-    label.alpha = 0.5;
-    [unlockedsliderView addSubview:label];
+   // UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(120, 13, 200, 30)];
+    //label.backgroundColor = [UIColor clearColor];
+   // label.font = [UIFont fontWithName:@"Arial-BoldMT" size:15];
+   // label.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"mojihaikei.png"]];
+   // label.text = @"STOP ALERM";
+   // label.alpha = 0.5;
+   // [unlockedsliderView addSubview:label];
     
     
     
     //矢印スライダー画像
-    arrowView = [[UIView alloc] initWithFrame:CGRectMake(24, 436, 56, 38)];
+    /*arrowView = [[UIView alloc] initWithFrame:CGRectMake(24, 436, 56, 38)];
     [self.view addSubview:arrowView];
 
     
     UIImageView *arrowImage = [[UIImageView alloc] initWithFrame:arrowView.bounds];
     arrowImage.image = [UIImage imageNamed:@"arrow.png"];
-    [arrowView addSubview:arrowImage];
+    [arrowView addSubview:arrowImage];*/
     
     
     
@@ -99,12 +163,12 @@ UILabel *clockLabel;
     [byoushinView addSubview:byoushinImage];
     
     //シルエットの画像
-    ningenView = [[UIView alloc] initWithFrame:CGRectMake(40, 330, 52, 80)];
-    [self.view addSubview:ningenView];
+    //ningenView = [[UIView alloc] initWithFrame:CGRectMake(40, 330, 52, 80)];
+    //[self.view addSubview:ningenView];
     
-    ningenImage = [[UIImageView alloc] initWithFrame:ningenView.bounds];
-    ningenImage.image = [UIImage imageNamed:@"ningen1.png"];
-    [ningenView addSubview:ningenImage];
+   // ningenImage = [[UIImageView alloc] initWithFrame:ningenView.bounds];
+    //ningenImage.image = [UIImage imageNamed:@"ningen1.png"];
+    //[ningenView addSubview:ningenImage];
     
 
     
@@ -143,16 +207,50 @@ UILabel *clockLabel;
     
     
     //送られくる時間を確認する文字列表示
-    UILabel *setString = [[UILabel alloc] initWithFrame:CGRectMake(90, 293, 160, 15)];
-    setString.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
-    setString.text = @"アラーム設定時刻";
-    [self.view addSubview:setString];
+    if([self isiPhone5]){
+        UILabel *setString = [[UILabel alloc] initWithFrame:CGRectMake(90, 360, 160, 15)];
+        setString.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
+        setString.text = @"アラーム設定時刻";
+        [self.view addSubview:setString];
+                                        
+                                        
+        UILabel *setTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(140, 380, 160, 20)];
+        setTimeLabel.textColor  = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
+        setTimeLabel.text = _arguments;
+        [self.view addSubview:setTimeLabel];
+    }else if ([self isiPhone4]) {
+        UILabel *setString = [[UILabel alloc] initWithFrame:CGRectMake(90, 350, 160, 15)];
+        setString.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
+        setString.text = @"アラーム設定時刻";
+        [self.view addSubview:setString];
+        
+        
+        UILabel *setTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(140, 370, 160, 20)];
+        setTimeLabel.textColor  = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
+        setTimeLabel.text = _arguments;
+        [self.view addSubview:setTimeLabel];
+
+    }else{
+        UILabel *setString = [[UILabel alloc] initWithFrame:CGRectMake(90, 330, 160, 15)];
+        setString.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
+        setString.text = @"アラーム設定時刻";
+        [self.view addSubview:setString];
+        
+        
+        UILabel *setTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(140, 350, 160, 20)];
+        setTimeLabel.textColor  = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
+        setTimeLabel.text = _arguments;
+        [self.view addSubview:setTimeLabel];
+    }
     
     
-    UILabel *setTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(140, 310, 160, 20)];
-    setTimeLabel.textColor  = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fire.png"]];
-    setTimeLabel.text = _arguments;
-    [self.view addSubview:setTimeLabel];
+    
+    
+    
+    
+    
+    
+
     
     
     //現在時刻を表示
@@ -232,12 +330,12 @@ UILabel *clockLabel;
     
     if ([nowTime isEqualToString:setTime]) {
         
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"etranze" ofType:@"mp3"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"b_114" ofType:@"mp3"];
         NSURL *url = [NSURL fileURLWithPath:path];
         audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-        audio.currentTime = 148.0f;
         [audio prepareToPlay];
         [audio play];
+        audio.numberOfLoops = -1;
         [timer_ invalidate];
 
     }
@@ -282,12 +380,78 @@ UILabel *clockLabel;
         [UIView beginAnimations:NULL context:nil];
         [UIView setAnimationDelegate:self];
         [UIView setAnimationDuration:0.01f];
-        
+            
+            if ([self isiPhone5]) {
+                arrowView.frame = CGRectMake(24, 524, 56, 38);
+            }else{
         arrowView.frame = CGRectMake(24, 436, 56, 38);
+            }
         
             [UIView commitAnimations];
         }
+        RespondViewController* next=[[RespondViewController alloc]init];
+        next.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
+            
+            [self.presentingViewController presentViewController:next animated:YES completion:nil];
+            NSLog(@"completing");
+        NSLog(@"completed");
     }
+}
+
+
+
+
+
+
+- (NSString *)iOSDevice
+{
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        if ([[UIScreen mainScreen] respondsToSelector: @selector(scale)]) {
+            CGSize result = [[UIScreen mainScreen] bounds].size;
+            CGFloat scale = [UIScreen mainScreen].scale;
+            result = CGSizeMake(result.width * scale, result.height * scale);
+            if(result.height == 960){
+                return (@"iPhone4");
+            }
+            if(result.height == 1136){
+                return (@"iPhone5");
+            }
+        } else {
+            return (@"iPhone3");
+        }
+    } else {
+        if ([[UIScreen mainScreen] respondsToSelector: @selector(scale)]) {
+            return (@"iPad Retina");
+        } else {
+            return (@"iPad");
+        }
+    }
+    return (@"unknown");
+}
+
+- (BOOL) isiPhone5
+{
+    return ([[self iOSDevice] isEqualToString:@"iPhone5"]);
+}
+
+- (BOOL) isiPhone4
+{
+    return ([[self iOSDevice] isEqualToString:@"iPhone4"]);
+}
+
+- (BOOL) isiPhone3
+{
+    return ([[self iOSDevice] isEqualToString:@"iPhone3"]);
+}
+
+- (BOOL) isIpad
+{
+    return ([[self iOSDevice] isEqualToString:@"iPad"]);
+}
+
+- (BOOL) isIpadRetina
+{
+    return ([[self iOSDevice] isEqualToString:@"iPad Retina"]);
 }
 
 

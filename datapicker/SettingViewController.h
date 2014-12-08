@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NickNameTableViewController.h"
+#import "Characterviewcontroller.h"
 
-@interface SettingViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
+
+@interface SettingViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate,NickNameDelegate>
 {
     NSArray *dataSource;
-    NSString *nickNameString;
+    UILabel *nickNameLabel;
     
 }
 
-@property(nonatomic) NSString *nickNameString_;
 
 @end

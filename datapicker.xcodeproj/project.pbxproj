@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2442CCBD196697E400890F0C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2442CCBC196697E400890F0C /* SettingViewController.m */; };
+		248C6F801A35C13700D2E01B /* b_114.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F7F1A35C13700D2E01B /* b_114.mp3 */; };
+		248C6F821A35E27E00D2E01B /* apurigazou.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F811A35E27E00D2E01B /* apurigazou.png */; };
+		248C6F841A35E9B900D2E01B /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F831A35E9B900D2E01B /* haikei.png */; };
+		248C6F861A35F0C800D2E01B /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F851A35F0C800D2E01B /* logo2.png */; };
+		248C6F8C1A35FD2F00D2E01B /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248C6F8B1A35FD2F00D2E01B /* CharacterViewController.m */; };
+		248C6F8E1A3611C800D2E01B /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F8D1A3611C800D2E01B /* exit.png */; };
+		248C6F911A3611DE00D2E01B /* P2PConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 248C6F901A3611DE00D2E01B /* P2PConnector.m */; };
+		248C6F931A3611E700D2E01B /* respond.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F921A3611E700D2E01B /* respond.png */; };
+		248C6F961A3611FA00D2E01B /* RespondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248C6F951A3611FA00D2E01B /* RespondViewController.m */; };
+		248C6F981A36120400D2E01B /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F971A36120400D2E01B /* return.png */; };
+		248C6F9B1A361F6B00D2E01B /* anzu.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F991A361F6B00D2E01B /* anzu.png */; };
+		248C6F9C1A361F6B00D2E01B /* anzuaseri.png in Resources */ = {isa = PBXBuildFile; fileRef = 248C6F9A1A361F6B00D2E01B /* anzuaseri.png */; };
 		24E000DB1972FE290008E3B6 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E000DA1972FE290008E3B6 /* NavigationViewController.m */; };
 		24E000DE197307380008E3B6 /* NickNameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E000DD197307380008E3B6 /* NickNameTableViewController.m */; };
 		24E000E0197684660008E3B6 /* etranze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E000DF197684660008E3B6 /* etranze.mp3 */; };
@@ -19,6 +31,7 @@
 		24E000EE1976849B0008E3B6 /* mojiban2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E61976849B0008E3B6 /* mojiban2.png */; };
 		24E000EF1976849B0008E3B6 /* tanshin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E71976849B0008E3B6 /* tanshin2.png */; };
 		24E000F01976849B0008E3B6 /* unlockedslider.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000E81976849B0008E3B6 /* unlockedslider.png */; };
+		24E000F2197693980008E3B6 /* ningen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E000F1197693980008E3B6 /* ningen1.png */; };
 		24E37BC5195BC11B00DABF5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BC4195BC11B00DABF5D /* Foundation.framework */; };
 		24E37BC7195BC11B00DABF5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BC6195BC11B00DABF5D /* CoreGraphics.framework */; };
 		24E37BC9195BC11B00DABF5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BC8195BC11B00DABF5D /* UIKit.framework */; };
@@ -35,6 +48,12 @@
 		24E37BF0195BC11B00DABF5D /* datapickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37BEF195BC11B00DABF5D /* datapickerTests.m */; };
 		24E37BFB195BE3DA00DABF5D /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37BFA195BE3DA00DABF5D /* ClockViewController.m */; };
 		24E37BFD195E511D00DABF5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37BFC195E511D00DABF5D /* AVFoundation.framework */; };
+		24F966F01A1744C300E13610 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F966EF1A1744C300E13610 /* CallViewController.m */; };
+		24F966F21A17450500E13610 /* callbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F966F11A17450500E13610 /* callbackground.png */; };
+		24F966F41A1F98D500E13610 /* background960.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F966F31A1F98D500E13610 /* background960.png */; };
+		24F966F61A1F98E100E13610 /* background1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F966F51A1F98E100E13610 /* background1136.png */; };
+		24F966F81A1F98E800E13610 /* background1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F966F71A1F98E800E13610 /* background1334.png */; };
+		24F966FA1A1F98EF00E13610 /* background2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 24F966F91A1F98EF00E13610 /* background2208.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +69,21 @@
 /* Begin PBXFileReference section */
 		2442CCBB196697E400890F0C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		2442CCBC196697E400890F0C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		248C6F7F1A35C13700D2E01B /* b_114.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b_114.mp3; sourceTree = "<group>"; };
+		248C6F811A35E27E00D2E01B /* apurigazou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apurigazou.png; sourceTree = "<group>"; };
+		248C6F831A35E9B900D2E01B /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
+		248C6F851A35F0C800D2E01B /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		248C6F8A1A35FD2F00D2E01B /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
+		248C6F8B1A35FD2F00D2E01B /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
+		248C6F8D1A3611C800D2E01B /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		248C6F8F1A3611D500D2E01B /* P2PConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P2PConnector.h; sourceTree = "<group>"; };
+		248C6F901A3611DE00D2E01B /* P2PConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2PConnector.m; sourceTree = "<group>"; };
+		248C6F921A3611E700D2E01B /* respond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = respond.png; sourceTree = "<group>"; };
+		248C6F941A3611F300D2E01B /* RespondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RespondViewController.h; sourceTree = "<group>"; };
+		248C6F951A3611FA00D2E01B /* RespondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespondViewController.m; sourceTree = "<group>"; };
+		248C6F971A36120400D2E01B /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
+		248C6F991A361F6B00D2E01B /* anzu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anzu.png; sourceTree = "<group>"; };
+		248C6F9A1A361F6B00D2E01B /* anzuaseri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anzuaseri.png; sourceTree = "<group>"; };
 		24E000D91972FE290008E3B6 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		24E000DA1972FE290008E3B6 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		24E000DC197307380008E3B6 /* NickNameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickNameTableViewController.h; sourceTree = "<group>"; };
@@ -63,6 +97,7 @@
 		24E000E61976849B0008E3B6 /* mojiban2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mojiban2.png; sourceTree = "<group>"; };
 		24E000E71976849B0008E3B6 /* tanshin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanshin2.png; sourceTree = "<group>"; };
 		24E000E81976849B0008E3B6 /* unlockedslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockedslider.png; sourceTree = "<group>"; };
+		24E000F1197693980008E3B6 /* ningen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ningen1.png; sourceTree = "<group>"; };
 		24E37BC1195BC11B00DABF5D /* datapicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datapicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E37BC4195BC11B00DABF5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24E37BC6195BC11B00DABF5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +120,13 @@
 		24E37BF9195BE3DA00DABF5D /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		24E37BFA195BE3DA00DABF5D /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		24E37BFC195E511D00DABF5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		24F966EE1A1744C300E13610 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		24F966EF1A1744C300E13610 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		24F966F11A17450500E13610 /* callbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callbackground.png; sourceTree = "<group>"; };
+		24F966F31A1F98D500E13610 /* background960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background960.png; sourceTree = "<group>"; };
+		24F966F51A1F98E100E13610 /* background1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1136.png; sourceTree = "<group>"; };
+		24F966F71A1F98E800E13610 /* background1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1334.png; sourceTree = "<group>"; };
+		24F966F91A1F98EF00E13610 /* background2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2208.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,20 +188,37 @@
 		24E37BCA195BC11B00DABF5D /* datapicker */ = {
 			isa = PBXGroup;
 			children = (
+				248C6F991A361F6B00D2E01B /* anzu.png */,
+				248C6F9A1A361F6B00D2E01B /* anzuaseri.png */,
 				24E37BD3195BC11B00DABF5D /* AppDelegate.h */,
 				24E37BD4195BC11B00DABF5D /* AppDelegate.m */,
 				24E37BD6195BC11B00DABF5D /* Main.storyboard */,
+				248C6F8F1A3611D500D2E01B /* P2PConnector.h */,
+				248C6F901A3611DE00D2E01B /* P2PConnector.m */,
+				248C6F941A3611F300D2E01B /* RespondViewController.h */,
+				248C6F951A3611FA00D2E01B /* RespondViewController.m */,
 				24E000D91972FE290008E3B6 /* NavigationViewController.h */,
 				24E000DA1972FE290008E3B6 /* NavigationViewController.m */,
 				2442CCBB196697E400890F0C /* SettingViewController.h */,
 				2442CCBC196697E400890F0C /* SettingViewController.m */,
 				24E000DC197307380008E3B6 /* NickNameTableViewController.h */,
 				24E000DD197307380008E3B6 /* NickNameTableViewController.m */,
+				248C6F8A1A35FD2F00D2E01B /* CharacterViewController.h */,
+				248C6F8B1A35FD2F00D2E01B /* CharacterViewController.m */,
 				24E37BF9195BE3DA00DABF5D /* ClockViewController.h */,
 				24E37BFA195BE3DA00DABF5D /* ClockViewController.m */,
+				24F966EE1A1744C300E13610 /* CallViewController.h */,
+				24F966EF1A1744C300E13610 /* CallViewController.m */,
 				24E37BD9195BC11B00DABF5D /* ViewController.h */,
 				24E37BDA195BC11B00DABF5D /* ViewController.m */,
 				24E000DF197684660008E3B6 /* etranze.mp3 */,
+				248C6F7F1A35C13700D2E01B /* b_114.mp3 */,
+				248C6F971A36120400D2E01B /* return.png */,
+				248C6F921A3611E700D2E01B /* respond.png */,
+				248C6F8D1A3611C800D2E01B /* exit.png */,
+				248C6F851A35F0C800D2E01B /* logo2.png */,
+				248C6F831A35E9B900D2E01B /* haikei.png */,
+				248C6F811A35E27E00D2E01B /* apurigazou.png */,
 				24E000E11976849B0008E3B6 /* arrow.png */,
 				24E000E21976849B0008E3B6 /* background.png */,
 				24E000E31976849B0008E3B6 /* byoushin.png */,
@@ -168,6 +227,12 @@
 				24E000E61976849B0008E3B6 /* mojiban2.png */,
 				24E000E71976849B0008E3B6 /* tanshin2.png */,
 				24E000E81976849B0008E3B6 /* unlockedslider.png */,
+				24F966F31A1F98D500E13610 /* background960.png */,
+				24F966F51A1F98E100E13610 /* background1136.png */,
+				24F966F71A1F98E800E13610 /* background1334.png */,
+				24E000F1197693980008E3B6 /* ningen1.png */,
+				24F966F91A1F98EF00E13610 /* background2208.png */,
+				24F966F11A17450500E13610 /* callbackground.png */,
 				24E37BDC195BC11B00DABF5D /* Images.xcassets */,
 				24E37BCB195BC11B00DABF5D /* Supporting Files */,
 			);
@@ -279,17 +344,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F966F61A1F98E100E13610 /* background1136.png in Resources */,
+				248C6F931A3611E700D2E01B /* respond.png in Resources */,
 				24E000EC1976849B0008E3B6 /* choushin.png in Resources */,
 				24E37BDD195BC11B00DABF5D /* Images.xcassets in Resources */,
 				24E000ED1976849B0008E3B6 /* fire.png in Resources */,
+				24F966F81A1F98E800E13610 /* background1334.png in Resources */,
+				24F966FA1A1F98EF00E13610 /* background2208.png in Resources */,
+				24F966F21A17450500E13610 /* callbackground.png in Resources */,
 				24E000EB1976849B0008E3B6 /* byoushin.png in Resources */,
 				24E000EF1976849B0008E3B6 /* tanshin2.png in Resources */,
 				24E000EA1976849B0008E3B6 /* background.png in Resources */,
+				24F966F41A1F98D500E13610 /* background960.png in Resources */,
+				248C6F801A35C13700D2E01B /* b_114.mp3 in Resources */,
+				248C6F8E1A3611C800D2E01B /* exit.png in Resources */,
 				24E37BCF195BC11B00DABF5D /* InfoPlist.strings in Resources */,
+				248C6F9B1A361F6B00D2E01B /* anzu.png in Resources */,
 				24E000E0197684660008E3B6 /* etranze.mp3 in Resources */,
+				24E000F2197693980008E3B6 /* ningen1.png in Resources */,
 				24E000EE1976849B0008E3B6 /* mojiban2.png in Resources */,
+				248C6F821A35E27E00D2E01B /* apurigazou.png in Resources */,
+				248C6F981A36120400D2E01B /* return.png in Resources */,
+				248C6F9C1A361F6B00D2E01B /* anzuaseri.png in Resources */,
 				24E000F01976849B0008E3B6 /* unlockedslider.png in Resources */,
 				24E000E91976849B0008E3B6 /* arrow.png in Resources */,
+				248C6F861A35F0C800D2E01B /* logo2.png in Resources */,
+				248C6F841A35E9B900D2E01B /* haikei.png in Resources */,
 				24E37BD8195BC11B00DABF5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,10 +391,14 @@
 			files = (
 				24E37BDB195BC11B00DABF5D /* ViewController.m in Sources */,
 				24E37BD5195BC11B00DABF5D /* AppDelegate.m in Sources */,
+				24F966F01A1744C300E13610 /* CallViewController.m in Sources */,
 				24E000DB1972FE290008E3B6 /* NavigationViewController.m in Sources */,
 				24E37BD1195BC11B00DABF5D /* main.m in Sources */,
+				248C6F961A3611FA00D2E01B /* RespondViewController.m in Sources */,
 				24E37BFB195BE3DA00DABF5D /* ClockViewController.m in Sources */,
 				24E000DE197307380008E3B6 /* NickNameTableViewController.m in Sources */,
+				248C6F8C1A35FD2F00D2E01B /* CharacterViewController.m in Sources */,
+				248C6F911A3611DE00D2E01B /* P2PConnector.m in Sources */,
 				2442CCBD196697E400890F0C /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

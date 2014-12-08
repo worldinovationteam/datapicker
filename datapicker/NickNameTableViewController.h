@@ -7,13 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SettingViewController.h"
+
+
+@protocol NickNameDelegate;
+
 
 @interface NickNameTableViewController : UITableViewController<UITextFieldDelegate>
 {
     NSArray *dataSource;
     UITextField *nickNameTextfld;
     NSString *nickNameString;
+   
 }
+
+@property(nonatomic ,assign) id<NickNameDelegate> delegate;
+
+@end
+
+
+
+@protocol NickNameDelegate <NSObject>
+
+-(void)nicknametableviewcontroller:(NickNameTableViewController *)nicknametableviewcontroller didClose:(NSString*)message;
 
 @end

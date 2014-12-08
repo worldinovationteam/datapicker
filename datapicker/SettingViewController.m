@@ -7,14 +7,15 @@
 //
 
 #import "SettingViewController.h"
-#import "NickNameTableViewController.h"
+
 
 
 @implementation SettingViewController
 
-@synthesize nickNameString_;
 
-//イニシャライザ
+
+
+/*--イニシャライザ
 -(id)init{
     self = [super init];
     if (self) {
@@ -22,15 +23,17 @@
     return self;
 }
 
-
+--*/
 
 
 
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     self.title = @"設定";
-    dataSource  = [[NSArray alloc] initWithObjects:@"ニックネーム",@"音楽",@"音量",nil];
+    dataSource  = [[NSArray alloc] initWithObjects:@"ニックネーム",@"キャラクターの使用について",nil];
     
    }
 
@@ -49,24 +52,29 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifer];
     }
     
+    
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
     cell.textLabel.text = [dataSource objectAtIndex:indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     if (indexPath.row == 0) {
-
-        UILabel *nickNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(200, 10, 100, 30)];
-        nickNameLabel.text = @"aaaa";
+       
+        nickNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(200, 10, 100, 30)];
+        
+        if (userdefaults == nil) {
+            nickNameLabel.text = @"default";
+        }
+                
+        nickNameLabel.text = [userdefaults objectForKey:@"nickName"];
+        
         NSLog(@"%@",nickNameLabel.text);
         
-        if (nickNameString_ != nil) {
-        nickNameLabel.text =nickNameString_;
-        }
+        
         [cell.contentView addSubview:nickNameLabel];
         
     }
     
-
-    [self updateCell:cell atIndexPath:indexPath];
+    
     
     return  cell;
 }
@@ -75,15 +83,26 @@
 //セルの遷移処理
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%ld",(long)indexPath.row);
-    NSLog(@"%@",nickNameString_);
+   
     
     NSArray *transitionArray = [NSArray arrayWithObjects:@"NickNameTable", nil];
     if (indexPath.row == 0) {
+        
         NickNameTableViewController *nickname = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
+        nickname.delegate = self;
         [self.navigationController pushViewController:nickname animated:YES];
         
         
     }
+    
+    
+    if (indexPath.row == 1) {
+        CharacterViewController *character = [[CharacterViewController alloc] init];
+        character.modalTransitionStyle =UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:character animated:YES completion:nil];
+    }
+
+    
     
 }
 
@@ -98,6 +117,17 @@
         [self updateCell:cell atIndexPath:[self.tableView indexPathForCell:cell]];
     }
 }
+
+
+//デリゲードメソッドを呼び出す
+-(void)nicknametableviewcontroller:(NickNameTableViewController *)nicknametableviewcontroller didClose:(NSString *)message{
+    
+    nickNameLabel.text = message;
+    
+}
+
+
+
 
 
 - (void)didReceiveMemoryWarning
